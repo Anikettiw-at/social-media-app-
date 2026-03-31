@@ -6,7 +6,7 @@ const LikeModal = ({ isOpen, onClose, id }) => {
   if (!isOpen) return null;
   const [value, setValue] = useState([]);
 
-  const [loading, setLoading] = true;
+  const [loading, setLoading] =useState(true);;
 
   async function fetchLikes() {
     try {
